@@ -1,2 +1,8 @@
+# Ambiente
 .env
-venv
+
+
+# Directorios
+venv/
+.claude/
+.playwright-mcp/

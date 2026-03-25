@@ -4,5 +4,6 @@
 
 # Directorios
 venv/
+.adk/
 .claude/
 .playwright-mcp/

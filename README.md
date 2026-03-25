@@ -1,6 +1,7 @@
 # Mi Primer Multiagente — Repaso con Google ADK
 
 Repositorio de práctica para aprender a construir agentes y sistemas multiagente usando el **Google Agent Development Kit (ADK)**.
+Nota : IA (Claude) usada para generación del readme y docstrings.
 
 ## Descripcion
 
@@ -20,29 +21,34 @@ Este repo cubre los patrones fundamentales de construccion de agentes con el ADK
 Este repositorio sigue el programa del [5-Day AI Agents Intensive](https://www.kaggle.com/learn-guide/5-day-agents) de Kaggle y Google. Cada dia corresponde a un modulo del curso:
 
 ### Dia 1 — Introduction to Agents
+
 Conceptos fundacionales de los agentes de IA: como se definen, en que se diferencian de una aplicacion LLM tradicional, y las arquitecturas agénticas. Se construye el primer agente con ADK y el primer sistema multiagente.
 
 **Archivos:** `agents.py`
 
 ### Dia 2 — Agent Tools & Interoperability with MCP
+
 Herramientas externas que permiten al agente tomar acciones: funciones Python, APIs, y el Model Context Protocol (MCP). Tambien cubre operaciones de larga duracion con aprobacion humana (human-in-the-loop).
 
-**Archivos:** *(pendiente)*
+**Archivos:** _(pendiente)_
 
 ### Dia 3 — Context Engineering: Sessions & Memory
+
 Como hacer agentes con estado (stateful): manejo del historial de conversacion, memoria de corto plazo dentro de una sesion y memoria de largo plazo que persiste entre sesiones.
 
-**Archivos:** *(pendiente)*
+**Archivos:** _(pendiente)_
 
 ### Dia 4 — Agent Quality
+
 Observabilidad, logs, trazas y metricas para depurar agentes. Estrategias de evaluacion: LLM-as-a-Judge y Human-in-the-Loop (HITL) para medir y mejorar la calidad de respuestas y uso de herramientas.
 
-**Archivos:** *(pendiente)*
+**Archivos:** _(pendiente)_
 
 ### Dia 5 — Prototype to Production
+
 Despliegue y escalado de agentes a produccion. Protocolo Agent2Agent (A2A) para sistemas multiagente distribuidos. Despliegue en Vertex AI Agent Engine en Google Cloud.
 
-**Archivos:** *(pendiente)*
+**Archivos:** _(pendiente)_
 
 ---
 

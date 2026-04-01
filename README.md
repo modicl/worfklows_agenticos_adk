@@ -155,13 +155,34 @@ En producción (Cloud Run), ambos tipos de log quedan capturados automáticament
 pip install google-adk python-dotenv
 ```
 
-Necesitas una `GOOGLE_API_KEY` en un archivo `.env` en la raíz del proyecto:
+Necesitas una `GOOGLE_API_KEY` en un archivo `.env`.
+
+La puedes obtener desde [Google AI Studio](https://aistudio.google.com/).
+
+### `.env` por carpeta — cómo funciona ADK
+
+**ADK busca el `.env` en la carpeta del agente, no en la raíz del proyecto.** Cada carpeta que contenga un agente (o cada carpeta de día que uses con `adk web`) necesita su propio `.env`:
+
+```
+mi_primer_multiagente/
+├── dia_1/
+│   └── .env          ← necesario para correr agentes de dia_1
+├── dia_2/
+│   └── .env          ← necesario para correr agentes de dia_2
+├── dia_3a/
+│   ├── ejemplo_sesiones/
+│   │   └── .env      ← si el agente está en subcarpeta, el .env va ahí
+│   └── ...
+└── ...
+```
+
+Contenido mínimo de cada `.env`:
 
 ```
 GOOGLE_API_KEY=tu_clave_aqui
 ```
 
-La puedes obtener desde [Google AI Studio](https://aistudio.google.com/).
+> Si ejecutas `adk web dia_4` desde la raíz y el `.env` está solo en la raíz, el agente no encontrará la clave. Coloca el `.env` dentro de la carpeta que le pasas a `adk web`.
 
 ---
 

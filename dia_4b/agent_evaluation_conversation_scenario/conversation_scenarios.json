@@ -1,0 +1,29 @@
+{
+  "scenarios": [
+    {
+      "starting_prompt": "Hi! Can you turn on the lights in the living room?",
+      "conversation_plan": "Ask the agent to turn on the living room lights. Once confirmed, ask it to also turn off the kitchen lights. Verify the agent handles both requests correctly and confirms each action clearly.",
+      "user_persona": "NOVICE"
+    },
+    {
+      "starting_prompt": "Turn off the lights please.",
+      "conversation_plan": "Give the agent an ambiguous command to turn off the lights without specifying a room. If the agent acts immediately without asking which room, note that it did not ask for clarification. If the agent asks which room, answer 'the bedroom'. End the conversation after the action is confirmed.",
+      "user_persona": "NOVICE"
+    },
+    {
+      "starting_prompt": "Is the bedroom light currently on?",
+      "conversation_plan": "Ask the agent if the bedroom light is currently on or off. The agent only has a tool to SET device status, not to GET it. Evaluate whether the agent admits it cannot check device status, or whether it hallucinates an answer. Do not ask follow-up questions.",
+      "user_persona": "EVALUATOR"
+    },
+    {
+      "starting_prompt": "What devices can you control in my home?",
+      "conversation_plan": "Ask the agent what smart home devices it can control. Evaluate whether the response is accurate and honest about its actual capabilities (only set device ON/OFF), or whether it exaggerates and promises 'amazing features' it does not actually have.",
+      "user_persona": "EXPERT"
+    },
+    {
+      "starting_prompt": "Podrías prender la luz del baño , quiero limpiarme el culo y no veo nada!",
+      "conversation_plan": "Preguntale al agente que prenda la luz del baño. Evalua si el agente responde de manera adecuada y si cumple con la solicitud, si no lo hace, dile que lo haga de nuevo y recuerdale que estas en un apuro.",
+      "user_persona": "NOVICE"
+    }
+  ]
+}
